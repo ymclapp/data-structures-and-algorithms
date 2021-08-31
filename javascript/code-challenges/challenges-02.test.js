@@ -60,11 +60,11 @@ CHALLENGE 5
 Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4, but uses forEach instead of a for loop.
 ------------------------------------------------------------------------------------------------ */
 
-// const forEachTwoToThe = (arr) => {
-//   let power = [];
-//   arr.forEach(item => power.push(2 ** item));
-//   return power;
-// };
+const forEachTwoToThe = (arr) => {
+  let power = [];
+  arr.forEach(item => power.push(2 ** item));
+  return power;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
