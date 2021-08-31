@@ -9,7 +9,11 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 ------------------------------------------------------------------------------------------------ */
 
 const raisedToTheThird = (arr) => {
-  // Solution code here...
+  const newRaised = [];
+  arr.forEach(raise => {
+    newRaised.push(Math.pow(raise, 3));
+  });
+  return newRaised;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +47,11 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-  // Solution code here...
+  let power = [];
+  for (let item of arr) {
+    power.push(2 ** item);
+  }
+  return power;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,7 +61,9 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  let power = [];
+  arr.forEach(item => power.push(2 ** item));
+  return power;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +73,7 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  return arr.map(item => 2 ** item);
 };
 
 /* ------------------------------------------------------------------------------------------------
