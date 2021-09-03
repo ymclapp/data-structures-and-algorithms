@@ -84,6 +84,8 @@ const alphabetize = (arr) => {
   // Solution code here...
   return arr.sort();
 };
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -99,8 +101,10 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  return arr.sort((a,b)=>{
+    return a.price - b.price;
+  });
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
