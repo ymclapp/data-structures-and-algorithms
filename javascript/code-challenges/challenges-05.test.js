@@ -114,8 +114,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  arr.sort((first, second) => parseFloat(second.height) - parseFloat(first.height));
-  return arr;
+  const names = starWarsData.reduce((acc, val, idx) => {
+    acc.push(val.name);
+    return acc;
+  }, []);
+  return names;
 };
 
 /* ------------------------------------------------------------------------------------------------
