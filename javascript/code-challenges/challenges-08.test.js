@@ -123,8 +123,16 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let cityAtoJ = [];
+  let expAtoJ = /^[A-J]/;
+  arr.forEach(city => {
+    if (expAtoJ.test(city)) {
+      cityAtoJ.push(city)
+    }
+  });
+  return cityAtoJ;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
