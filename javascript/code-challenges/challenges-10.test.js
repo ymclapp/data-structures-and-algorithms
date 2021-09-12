@@ -46,8 +46,14 @@ For example:
 
 return: 35
 ------------------------------------------------------------------------------------------------ */
-const totalSum = (matrix) => {
-  // Solution code here...
+const totalSum = (input) => {
+  const reducedArray = input.reduce((count, subArray) => {
+    const targetCount = subArray.reduce((accumulator, num) => {
+      return accumulator + num;
+    }, 0);
+    return count + targetCount;
+  }, 0);
+  return reducedArray;
 };
 
 
