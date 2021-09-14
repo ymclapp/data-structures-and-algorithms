@@ -64,7 +64,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  // Solution code here...
+  const regex = /^\w+(\.(\w+))?@\w+\.(org|com|net)$/;
+  return regex.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
