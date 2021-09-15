@@ -57,7 +57,11 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  let newStr = '';
+  for (let i = 1; i < str.length; i += 2) {
+    newStr += str.charAt(i);
+  }
+  return newStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
