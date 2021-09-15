@@ -71,9 +71,12 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  let happyCoder = true;
+  arr.forEach(str => {
+    !str.includes(':)') ? happyCoder = false : happyCoder;
+  });
+  return happyCoder;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
