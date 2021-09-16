@@ -127,7 +127,22 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  // Solution code here...
+  arr.sort((a,b) =>{
+    let x = a[property];
+    let y = b[property];
+
+    if (x < y) {
+      return -1;
+    }
+    else if (x === y) {
+      return 0;
+    }
+    else {
+      return 1;
+    }
+  });
+  return arr;
+ 
 };
 
 /* ------------------------------------------------------------------------------------------------
