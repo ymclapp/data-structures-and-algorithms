@@ -22,6 +22,6 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-## Code Challenge:  [Class 01 - Array Reverse](./c-sharp/DataStructures/ArrayReverse/README.md)
-## Code Challenge:  [Class 02 - Array Insert Shift](./c-sharp/DataStructures/ArrayInsertShift/README.md)
-## Code Challenge:  [Class 03 - Array Binary Search](./c-sharp/DataStructures/ArrayInsertShift/README.md)
+## Code Challenge:  [Class 01 - Array Reverse](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\ArrayReverse\README.md)
+## Code Challenge:  [Class 02 - Array Insert Shift](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\ArrayInsertShift\README.md)
+## Code Challenge:  [Class 03 - Array Binary Search](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\ArrayInsertShift\README.md)
