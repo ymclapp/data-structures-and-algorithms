@@ -22,22 +22,6 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-## Code Challenge:  Class 01 - Array Reverse
-# Reverse an Array
-We were given a specific array and asked to reverse it in place.
-
-## Whiteboard Process
-![Array Reverse Whiteboard](ArrayReverseWhiteBoard.jpg)
-
-## Approach & Efficiency
-We assumed the array was all numbers and we used the Array.Reverse method in C# to take the original array and exactly reverse the order of the that array in the same space.  Had we had it to do again, we would not have used the method.  We would have used a for loop to move two items at a time.
-
-## Code Challenge:  Class 02 - Array Insert Shift
-# Insert Shift Array
-We were given a specific array and asked to insert an element into the middle of that array without using any known methods.
-
-## Whiteboard Process
-![Array Insert Shift Whiteboard](challenge02-whiteboard.jpg)
-
-## Approach & Efficiency
-Not knowing how big the original array was, we determined that  we would need to take the original array and create a new, empty array that contained one more element than the original.  Then, using a for loop, we would insert each member of the original array into the new array UP TO the middle of the original array.  At that point, we would insert the newly item and then continue adding elements from the original array, but at their original index + 1.  We were not completely sure on which all methods to use to insert the new element and the rest of the original array.
+## Code Challenge:  [Class 01 - Array Reverse](./c-sharp/DataStructures/ArrayReverse/README.md)
+## Code Challenge:  [Class 02 - Array Insert Shift](./c-sharp/DataStructures/ArrayInsertShift/README.md)
+## Code Challenge:  [Class 03 - Array Binary Search](./c-sharp/DataStructures/ArrayInsertShift/README.md)
