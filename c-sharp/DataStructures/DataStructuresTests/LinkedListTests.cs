@@ -20,5 +20,20 @@ namespace DataStructuresTests
       //Assert
       Assert.Null(head);
     }
+
+    [Fact]
+    public void Insert_into_empty_linkedList()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+
+      //Act
+      list.Insert(1);  //inserting a 1 at the Head, but failing because we don't have
+
+      //Assert
+      Assert.NotNull(list.Head);
+      Assert.Equal(1, list.Head.Value);//the value of the node at Head to be 1
+    }
   }
 }
