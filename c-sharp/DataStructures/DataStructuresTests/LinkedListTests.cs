@@ -29,7 +29,7 @@ namespace DataStructuresTests
       LinkedList list = new LinkedList();
 
       //Act
-      list.Insert(1);  //inserting a 1 at the Head, but failing because we don't have
+      list.Insert(1);  //inserting a 1 at the Head, but failing because we don't have our node built to accept a value in the LinkedList.cs
 
       //Assert
       Assert.NotNull(list.Head);
