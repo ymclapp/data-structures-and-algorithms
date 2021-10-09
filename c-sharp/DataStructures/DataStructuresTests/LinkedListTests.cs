@@ -80,5 +80,29 @@ namespace DataStructuresTests
       Assert.Equal(expected, result);
     }
 
+    [Fact]
+    public void Print_out_linked_list_values()
+    {
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(10);
+      list.Insert(20);
+      list.Insert(30);
+      list.Insert(50);
+      list.Insert(80);
+      list.Insert(130);
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+     Console.WriteLine(list);
+      //Act
+
+
+      //Assert
+
+
+    }
+
+
   }
 }
