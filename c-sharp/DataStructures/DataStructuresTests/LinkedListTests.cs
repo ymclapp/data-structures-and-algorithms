@@ -60,5 +60,25 @@ namespace DataStructuresTests
       Assert.Null(list.Head.Next.Next);  //makes the node after Next (5) to be Null
     }
 
+    [Theory]
+    [InlineData(7, false)]
+    [InlineData(10, true)]
+    [InlineData(21, true)]
+
+    public void Include_finds_a_value_or_not(int valueToFind, bool expected)
+    {
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(10);
+      list.Insert(21);
+
+      //Act
+      bool result = list.Includes(valueToFind);
+
+      //Assert
+
+      Assert.Equal(expected, result);
+    }
+
   }
 }

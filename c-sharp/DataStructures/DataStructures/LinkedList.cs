@@ -6,6 +6,7 @@ namespace DataStructures
 {
   public class LinkedList
   {
+    //private static readonly LinkedList list = new LinkedList();
     public Node Head { get; set; }  //used light bulb in the tests to create this
 
     public void Insert(int value)  //used the light bulb in the tests to create this
@@ -16,6 +17,20 @@ namespace DataStructures
       Head = newNode;  //we are drawing the arrow from the Head to the newNode.  we are pointing it to the newNode. Head is a reference to the first node.  Need this for every new Linked List
       //newNode.Next = newNode;
       //throw new NotImplementedException();  //commented out so that the insert would work with out throwing this exception
+    }
+
+    public bool Includes (int valueToFind)
+    {
+      
+      Node currentNode = Head;
+      while ((currentNode != null) && (currentNode.Value != valueToFind))
+      {
+        currentNode = currentNode.Next;
+
+        return false;
+      }
+      return true;
+      
     }
   }
 }
