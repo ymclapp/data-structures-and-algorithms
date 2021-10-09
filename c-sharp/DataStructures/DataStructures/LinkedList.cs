@@ -12,7 +12,9 @@ namespace DataStructures
     {
       Node newNode = new Node();  //created linkedList empty
       newNode.Value = value;  //told it to insert what it is told - needed this for the second test
+      newNode.Next = Head;  //makes the next of the new Node as the Head when inserting at the beginning
       Head = newNode;  //we are drawing the arrow from the Head to the newNode.  we are pointing it to the newNode. Head is a reference to the first node.  Need this for every new Linked List
+      //newNode.Next = newNode;
       //throw new NotImplementedException();  //commented out so that the insert would work with out throwing this exception
     }
   }

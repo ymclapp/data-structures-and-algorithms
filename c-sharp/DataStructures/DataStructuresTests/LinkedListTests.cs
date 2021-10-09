@@ -41,5 +41,24 @@ namespace DataStructuresTests
       //Make sure the Head node does not have a Next
       Assert.Null(list.Head.Next);
     }
+
+    [Fact] //You can do [Fact (Skip = "Homework")
+    public void Insert_into_list_not_empty_works() //we are inserting a value at Head
+    {
+      //Arrange
+      LinkedList list = new LinkedList();  //Head points to nothing
+      list.Insert(5);  //Head points to 5
+
+      //Act
+      list.Insert(3);  //Head points to 5, we add the 3 and now it points to 5
+
+      //Assert
+      Assert.NotNull(list.Head);  //making sure Head is pointing to Null
+      Assert.Equal(3, list.Head.Value); //inserting 3 into the node that the 
+      Assert.NotNull(list.Head.Next);  //making sure that the 3 points to 5
+      Assert.Equal(5, list.Head.Next.Value); //makes the value in the node after the one that the head is pointing to (3) is 5
+      Assert.Null(list.Head.Next.Next);  //makes the node after Next (5) to be Null
+    }
+
   }
 }
