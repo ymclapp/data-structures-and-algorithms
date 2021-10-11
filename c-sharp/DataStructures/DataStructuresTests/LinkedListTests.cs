@@ -88,18 +88,18 @@ namespace DataStructuresTests
       list.Insert(10);
       list.Insert(20);
       list.Insert(30);
-      list.Insert(50);
-      list.Insert(80);
-      list.Insert(130);
-      list.Insert(210);
-      list.Insert(340);
-      list.Insert(550);
-     Console.WriteLine(list);
+      //list.Insert(50);
+      //list.Insert(80);
+      //list.Insert(130);
+      //list.Insert(210);
+      //list.Insert(340);
+      //list.Insert(550);
+     //Console.WriteLine(list);
       //Act
-
+      string result = list.ToString();
 
       //Assert
-
+      Assert.Equal("30 -> 20 -> 10 -> NULL", result);
 
     }
 

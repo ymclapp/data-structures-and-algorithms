@@ -39,9 +39,10 @@ namespace DataStructures
       while (currentNode != null)
       {
         Out += currentNode.Value;
-        Out += "-->";
+        Out += " -> ";
         currentNode = currentNode.Next;
       }
+      Out += "NULL";
         return Out;
         //Console.WriteLine(currentNode.Value);
         //currentNode = currentNode.Next;
