@@ -49,7 +49,7 @@ namespace DataStructures
         //Console.WriteLine(currentNode.Value);
         //currentNode = currentNode.Next;
     }//end of the Print()
-    public void AtEnd(int appendValue)  //used the light bulb in the tests to create this
+    public void AtEnd(int appendValue)
     {
       Node newNode = new Node();  //created linkedList empty
       newNode.Value = appendValue;  //
@@ -68,16 +68,16 @@ namespace DataStructures
       }
     }//end of AtEnd()
 
-    public void AddBefore(int addValue)
+    public void AddBefore(Node prev_node, int addValue)
     {
-      Node prev = null;
+      //Node prev = null;
       Node current = Head;
 
       while(current != null)
       {
         if(current.Value == addValue)
         {
-          if(prev == null)
+          if(prev_node == null)
           {
             this.Insert(addValue);
             break;
@@ -86,10 +86,11 @@ namespace DataStructures
           newNode.Value = addValue;
           newNode.Next = current;
 
-          prev.Next = newNode;
+          prev_node.Next = newNode;
           break;
         }
-
+        prev_node = current;
+        current = current.Next;
       }
     }//end of AddBefore()
   }//end of class LinkedList
