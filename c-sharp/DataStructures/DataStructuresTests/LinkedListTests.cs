@@ -103,6 +103,29 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Insert_at_end_of_linkedList()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(10);
+      list.Insert(20);
+      list.Insert(30);
+      list.Insert(50);
+      list.Insert(80);
+      list.Insert(130);
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+
+      //Act
+      int result = AtEnd(value);  //inserting 890 at the Tail
+
+      //Assert
+      Assert.Equal(890, result);//
+
+    }
 
   }
 }
