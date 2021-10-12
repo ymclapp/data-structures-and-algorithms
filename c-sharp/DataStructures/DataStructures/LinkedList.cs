@@ -49,12 +49,12 @@ namespace DataStructures
         //Console.WriteLine(currentNode.Value);
         //currentNode = currentNode.Next;
     }//end of the Print()
-    public void AtEnd(int value)  //used the light bulb in the tests to create this
+    public void AtEnd(int appendValue)  //used the light bulb in the tests to create this
     {
       Node newNode = new Node();  //created linkedList empty
-      newNode.Value = value;  //
-      newNode.Next = null;  //makes the next of the new Node as the Head when inserting at the beginning
-      if(Head == null)
+      newNode.Value = appendValue;  //
+      newNode.Next = null;  //
+      if (Head == null)
       {
         Head = newNode;
       }
@@ -67,5 +67,30 @@ namespace DataStructures
         temp.Next = newNode;
       }
     }//end of AtEnd()
+
+    public void AddBefore(int addValue)
+    {
+      Node prev = null;
+      Node current = Head;
+
+      while(current != null)
+      {
+        if(current.Value == addValue)
+        {
+          if(prev == null)
+          {
+            this.Insert(addValue);
+            break;
+          }
+          Node newNode = new Node();
+          newNode.Value = addValue;
+          newNode.Next = current;
+
+          prev.Next = newNode;
+          break;
+        }
+
+      }
+    }//end of AddBefore()
   }//end of class LinkedList
 }//end of namespace DataStructures
