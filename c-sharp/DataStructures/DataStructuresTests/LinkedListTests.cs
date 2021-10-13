@@ -103,6 +103,41 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Insert_at_end_of_linkedList()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+
+      //Act
+      list.AtEnd(890);  //inserting 890 at the Tail
+
+      //Assert
+      Assert.Equal("550 -> 340 -> 210 -> 890 -> NULL", list.ToString());
+
+    }
+
+    [Fact]
+    public void Add_before_340_of_linkedList()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+
+      //Act
+      list.AddBefore(3);  //
+
+      //Assert
+      Assert.Equal("550 -> 3 -> 340 -> 210 -> NULL", list.ToString());
+
+    }
 
   }
 }
