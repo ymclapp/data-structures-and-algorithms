@@ -24,6 +24,7 @@ Space:  O(1)
 <!-- Description of each method publicly available to your Linked List -->
 
 ## Code Challenge:  Class 06 - Linked List Append, Insert Before, and Insert After
+![Class 06 - Linked List Append, Insert Belore, Insert After](./DataStructurest/AppendBeforeAfter.jpg)
 # Singly Linked List
 We will be updating the linked list that we created in Lab 05
 
@@ -48,3 +49,23 @@ Space:  O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+## Code Challenge:  Class 07 - Linked List k-th Value
+![Class 07 - Linked List k-th value](./DataStructurest/LinkedListkth.jpg)
+# Singly Linked List
+We will be updating the linked list that we created in Lab 05
+
+## Challenge
+This activity will take the original linked list and create a process for finding the length of the list, looping through it to find thek k-th node, and return the value at that node
+
+## Approach & Efficiency
+
+As the linked list has be to traversed to find the node after/before which a new node is to be inserted.
+Appending the linked list:
+Time:  O(n)
+Space: O(1)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
+
