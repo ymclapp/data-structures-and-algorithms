@@ -26,3 +26,4 @@ To run your tests
 ## Code Challenge:  [Class 02 - Array Insert Shift](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\ArrayInsertShift\README.md)
 ## Code Challenge:  [Class 03 - Array Binary Search](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\ArrayInsertShift\README.md)
 ## Code Challenge:  [Class 05 - Linked List Implementation](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
+## Code Challenge: [Class 06 - Linked List Append, Insert Belore, Insert After](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
