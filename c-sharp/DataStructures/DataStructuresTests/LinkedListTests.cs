@@ -132,7 +132,7 @@ namespace DataStructuresTests
       list.Insert(550);
 
       //Act
-      list.AddBefore(3, 3);  //
+      list.AddBefore(3);  //
 
       //Assert
       Assert.Equal("550 -> 3 -> 340 -> 210 -> NULL", list.ToString());

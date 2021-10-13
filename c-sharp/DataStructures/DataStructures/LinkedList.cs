@@ -70,7 +70,7 @@ namespace DataStructures
 
     public void AddBefore(Node prev_node, int addValue)
     {
-      //Node prev = null;
+      //Node prev_node = null;
       Node current = Head;
 
       while(current != null)
