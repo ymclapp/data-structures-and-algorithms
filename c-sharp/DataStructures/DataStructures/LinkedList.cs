@@ -68,6 +68,35 @@ namespace DataStructures
       }
     }//end of AtEnd()
 
+    public void AddAtHead(int oldHead, int addHead)
+    {
+      if(Head.Value == oldHead)
+      {
+        Insert(addHead);
+        return;
+      }
+
+      Node newNode = new Node();//created linkedlist empty
+      //newNode.Value = addHead;
+      // newNode.Next = null
+      Node currentNode = Head;
+
+      while(currentNode != null)
+      {
+        if(currentNode.Next.Value == oldHead)
+        {
+          newNode.Next = currentNode.Next;
+          currentNode.Next = newNode;
+          return;
+          //currentNode.Next = newNode;
+        }
+        currentNode = currentNode.Next;
+      }
+
+    }
+
+    //I think this is add kth
+
     public void AddBefore(Node prev_node, int addValue)
     {
       //Node prev_node = null;
