@@ -68,29 +68,49 @@ namespace DataStructures
       }
     }//end of AtEnd()
 
-    public void AddBefore(Node prev_node, int addValue)
+    public void AddAtHead(int oldHead, int addHead)
     {
-      //Node prev_node = null;
-      Node current = Head;
-
-      while(current != null)
+      if(Head.Value == oldHead)
       {
-        if(current.Value == addValue)
-        {
-          if(prev_node == null)
-          {
-            this.Insert(addValue);
-            break;
-          }
-          Node newNode = new Node();
-          newNode.Value = addValue;
-          newNode.Next = current;
+        Insert(addHead);
+        return;
+      }
 
-          prev_node.Next = newNode;
-          break;
+      Node newNode = new Node();//created linkedlist empty
+      //newNode.Value = addHead;
+      // newNode.Next = null
+      Node currentNode = Head;
+
+      while(currentNode != null)
+      {
+        if(currentNode.Next.Value == oldHead)
+        {
+          newNode.Next = currentNode.Next;
+          currentNode.Next = newNode;
+          return;
+          //currentNode.Next = newNode;
         }
-        prev_node = current;
-        current = current.Next;
+        currentNode = currentNode.Next;
+      }
+
+    }
+
+
+    public void AddAfter(int searchValue, int addValue)
+    {
+      Node newNode = new Node();//addValue?
+      Node currentNode = Head;
+
+      while(currentNode != null)
+      {
+        if (currentNode.Value == searchValue)
+        {
+          //Node newNode = new Node();
+          newNode.Next = currentNode.Next;
+          currentNode.Next = newNode;
+          return;
+        }
+        currentNode = currentNode.Next;
       }
     }//end of AddBefore()
   }//end of class LinkedList
