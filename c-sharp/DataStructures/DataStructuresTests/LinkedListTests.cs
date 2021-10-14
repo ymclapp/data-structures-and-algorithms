@@ -160,5 +160,26 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Finding_kth_value()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+      list.Insert(10);
+      list.Insert(20);
+      list.Insert(30);
+
+      //Act
+
+
+      //Assert
+      Assert.Equal(10, list.KthValue(3));
+
+    }
+
   }
 }

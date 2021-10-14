@@ -113,5 +113,36 @@ namespace DataStructures
         currentNode = currentNode.Next;
       }
     }//end of AddBefore()
+
+    public int KthValue(int searchValue)
+    {
+      int llLength = 0;
+      Node currentNode = Head;
+
+      while(currentNode != null)
+      {
+        llLength++;
+        currentNode = currentNode.Next;
+      }
+
+      if (searchValue < 0)
+      {
+        throw new IndexOutOfRangeException("Enter a positive value");
+      }
+
+      if(searchValue > llLength)
+      {
+        throw new IndexOutOfRangeException("Enter a value that is in the current list");
+      }
+
+      currentNode = Head;
+      int counter = 0;
+      while(currentNode != null && counter < llLength - searchValue -1)
+      {
+        counter++;
+        currentNode = currentNode.Next;
+      }
+      return currentNode.Value;
+    }//end of KthValue()
   }//end of class LinkedList
 }//end of namespace DataStructures
