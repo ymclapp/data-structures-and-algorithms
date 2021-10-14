@@ -24,7 +24,7 @@ Space:  O(1)
 <!-- Description of each method publicly available to your Linked List -->
 
 ## Code Challenge:  Class 06 - Linked List Append, Insert Before, and Insert After
-![Class 06 - Linked List Append, Insert Belore, Insert After](./DataStructurest/AppendBeforeAfter.jpg)
+![Class 06 - Linked List Append, Insert Belore, Insert After](./DataStructures/AppendBeforeAfter.jpg)
 # Singly Linked List
 We will be updating the linked list that we created in Lab 05
 
@@ -51,7 +51,7 @@ Space:  O(n)
 <!-- Description of each method publicly available to your Linked List -->
 
 ## Code Challenge:  Class 07 - Linked List k-th Value
-![Class 07 - Linked List k-th value](./DataStructurest/LinkedListkth.jpg)
+![Class 07 - Linked List k-th value](./DataStructures/LinkedListkth.jpg)
 # Singly Linked List
 We will be updating the linked list that we created in Lab 05
 
@@ -69,3 +69,22 @@ Space: O(1)
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
+## Code Challenge:  Class 07 - Linked List k-th Value
+![Class 08 - Linked List Zip](./DataStructures/linked-lis-zip.jpg)
+# Singly Linked List
+We will be updating a linked list
+
+## Challenge
+This activity will take the a linked list and alternately insert another linked list's nodes into so that the nodes alternate between the values of each linked list in the first list.
+
+## Approach & Efficiency
+
+
+
+Zipping the linked list:
+Time:  O(n)
+Space: O(n)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
