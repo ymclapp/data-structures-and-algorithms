@@ -160,5 +160,55 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Finding_kth_value()
+    {
+
+      //Arrange
+      LinkedList list = new LinkedList();
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
+      list.Insert(10);
+      list.Insert(20);
+      list.Insert(30);
+
+      //Act
+
+
+      //Assert
+      Assert.Equal(10, list.KthValue(3));
+
+    }
+
+    [Fact]
+    public void Zipping_two_linkedlists_together()
+    {
+      //Arrange
+      LinkedList list1 = new LinkedList();
+      list1.Insert(210);
+      list1.Insert(340);
+      list1.Insert(550);
+
+      LinkedList list2 = new LinkedList();
+      list2.Insert(10);
+      list2.Insert(20);
+      list2.Insert(30);
+
+
+      //Act
+      LinkedList zipped = new LinkedList();
+      zipped.Insert(210);
+      list2.Insert(10);
+      list1.Insert(340);
+      list2.Insert(20);
+      list1.Insert(550);
+      list2.Insert(30);
+
+      //Assert
+      Assert.Equal("30 -> 550 -> 20 -> 340 -> 10 -> 210 -> NULL", zipped.ToString());
+
+    }//end of zipping
+
   }
 }

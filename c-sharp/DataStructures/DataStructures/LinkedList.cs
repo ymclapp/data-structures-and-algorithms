@@ -113,5 +113,74 @@ namespace DataStructures
         currentNode = currentNode.Next;
       }
     }//end of AddBefore()
+
+    public int KthValue(int searchValue)
+    {
+      int llLength = 0;
+      Node currentNode = Head;
+
+      while(currentNode != null)
+      {
+        llLength++;
+        currentNode = currentNode.Next;
+      }
+
+      if (searchValue < 0)
+      {
+        throw new IndexOutOfRangeException("Enter a positive value");
+      }
+
+      if(searchValue > llLength)
+      {
+        throw new IndexOutOfRangeException("Enter a value that is in the current list");
+      }
+
+      currentNode = Head;
+      int counter = 0;
+      while(currentNode != null && counter < llLength - searchValue -1)
+      {
+        counter++;
+        currentNode = currentNode.Next;
+      }
+      return currentNode.Value;
+    }//end of KthValue()
+
+    public static LinkedList Zipped(LinkedList list1, LinkedList list2)
+    {
+      Node currentNode1 = Head;
+      Node currentNode2 = Head;
+
+      if(list1.Head == null)
+      {
+        return list2;
+      }
+      if(list2.Head == null)
+      {
+        return list1;
+      }
+
+      if(list1 == null && list2 == null)
+      {
+        return null;
+      }
+
+      currentNode1 = list1.Head;
+      currentNode2 = list2.Head;
+
+      while(currentNode1 != null && currentNode2 != null)
+      {
+        list2.Head = currentNode2;
+        currentNode2.Next = currentNode1.Next;
+        currentNode1 = currentNode1.Next;
+        currentNode2 = list2.Head;
+      }
+      if(currentNode2 ! = null)
+      {
+        currentNode1.Next = currentNode2;
+      }
+      return list1;
+    }
+
+
   }//end of class LinkedList
 }//end of namespace DataStructures
