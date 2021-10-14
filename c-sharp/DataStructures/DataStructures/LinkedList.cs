@@ -95,31 +95,22 @@ namespace DataStructures
 
     }
 
-    //I think this is add kth
 
-    public void AddBefore(Node prev_node, int addValue)
+    public void AddAfter(int searchValue, int addValue)
     {
-      //Node prev_node = null;
-      Node current = Head;
+      Node newNode = new Node();//addValue?
+      Node currentNode = Head;
 
-      while(current != null)
+      while(currentNode != null)
       {
-        if(current.Value == addValue)
+        if (currentNode.Value == searchValue)
         {
-          if(prev_node == null)
-          {
-            this.Insert(addValue);
-            break;
-          }
-          Node newNode = new Node();
-          newNode.Value = addValue;
-          newNode.Next = current;
-
-          prev_node.Next = newNode;
-          break;
+          //Node newNode = new Node();
+          newNode.Next = currentNode.Next;
+          currentNode.Next = newNode;
+          return;
         }
-        prev_node = current;
-        current = current.Next;
+        currentNode = currentNode.Next;
       }
     }//end of AddBefore()
   }//end of class LinkedList

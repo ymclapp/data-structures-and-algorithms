@@ -137,29 +137,28 @@ namespace DataStructuresTests
       //Assert
       Assert.NotNull(list.Head);
       Assert.Equal("890 -> 210 -> NULL", list.ToString());
-
-
     }
 
 
-    //I think this is the kth one
-    //[Fact]
-    //public void Add_before_340_of_linkedList()
-    //{
+   
+    [Fact]
+    public void Add_after_340_of_linkedList()
+    {
 
       //Arrange
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(210);
-     // list.Insert(340);
-    //  list.Insert(550);
+      LinkedList list = new LinkedList();
+      list.Insert(210);
+      list.Insert(340);
+      list.Insert(550);
 
       //Act
-    //  list.AddBefore(3);  //
+      list.AddAfter(340, 3);
+
 
       //Assert
-    //  Assert.Equal("550 -> 3 -> 340 -> 210 -> NULL", list.ToString());
+      Assert.Equal("550 -> 340 -> 3 -> 210 -> NULL", list.ToString());
 
-    //}
+    }
 
   }
 }
