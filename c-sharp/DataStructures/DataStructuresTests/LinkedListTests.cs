@@ -211,9 +211,6 @@ namespace DataStructuresTests
       //Assert
       Assert.Equal(3, stack.Size);
 
-
-
-
     }
 
 
