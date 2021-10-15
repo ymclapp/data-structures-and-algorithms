@@ -160,7 +160,13 @@ namespace DataStructuresTests
 
     }
 
-    [Fact]
+
+   //[Fact]
+    //public void 
+
+
+
+    [Fact (Skip = "zipped")]
     public void Zipping_two_linkedlists_together()
     {
       //Arrange

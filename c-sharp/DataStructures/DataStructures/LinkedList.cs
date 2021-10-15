@@ -145,41 +145,43 @@ namespace DataStructures
       return currentNode.Value;
     }//end of KthValue()
 
-    public static LinkedList Zipped(LinkedList list1, LinkedList list2)
-    {
-      Node currentNode1 = Head;
-      Node currentNode2 = Head;
 
-      if(list1.Head == null)
-      {
-        return list2;
-      }
-      if(list2.Head == null)
-      {
-        return list1;
-      }
 
-      if(list1 == null && list2 == null)
-      {
-        return null;
-      }
+    //public static LinkedList Zipped(LinkedList list1, LinkedList list2)
+    //{
+    // Node currentNode1 = Head;
+    // Node currentNode2 = Head;
 
-      currentNode1 = list1.Head;
-      currentNode2 = list2.Head;
+     // if(list1.Head == null)
+     // {
+      //  return list2;
+     // }
+     // if(list2.Head == null)
+    //  {
+     //   return list1;
+    //  }
 
-      while(currentNode1 != null && currentNode2 != null)
-      {
-        list2.Head = currentNode2;
-        currentNode2.Next = currentNode1.Next;
-        currentNode1 = currentNode1.Next;
-        currentNode2 = list2.Head;
-      }
-      if(currentNode2 ! = null)
-      {
-        currentNode1.Next = currentNode2;
-      }
-      return list1;
-    }
+    //  if(list1 == null && list2 == null)
+    //  {
+    //    return null;
+     // }
+
+    //  currentNode1 = list1.Head;
+    //  currentNode2 = list2.Head;
+
+     // while(currentNode1 != null && currentNode2 != null)
+     // {
+     //   list2.Head = currentNode2;
+      //  currentNode2.Next = currentNode1.Next;
+     //   currentNode1 = currentNode1.Next;
+     //   currentNode2 = list2.Head;
+     // }
+     // if(currentNode2 != null)
+    //  {
+    //   currentNode1.Next = currentNode2;
+    //  }
+    //  return list1;
+    //}//end of zipped
 
 
   }//end of class LinkedList
