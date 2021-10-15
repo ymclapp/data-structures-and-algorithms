@@ -169,7 +169,7 @@ namespace DataStructuresTests
     public void Starting_with_an_empty_stack()
     {
       //Arrange
-      Stack<string> stack = new Stack<string>();
+      Stack<int> stack = new Stack<int>();
 
       //Act
 
@@ -180,7 +180,41 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Pushing_onto_an_empty_stack()
+    {
+      //Arrange
+      Stack<int> stack = new Stack<int>();
 
+      //Act
+      stack.Push(1);
+
+      //Assert
+      Assert.Equal(1, stack.Size);
+
+    }
+
+    [Fact]
+    public void Pushing_more_than_one_time()
+    {
+
+      //Arrange
+      Stack<int> stack = new Stack<int>();
+
+
+      //Act
+      stack.Push(1);
+      stack.Push(3);
+      stack.Push(5);
+
+
+      //Assert
+      Assert.Equal(3, stack.Size);
+
+
+
+
+    }
 
 
 
