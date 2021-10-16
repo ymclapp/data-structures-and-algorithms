@@ -214,6 +214,45 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Popping_top_off_the_stack()
+    {
+
+      //Arrange
+      Stack<int> stack = new Stack<int>();
+      stack.Push(1);
+      stack.Push(3);
+      stack.Push(5);
+
+      //Act
+      stack.Pop();
+
+      //
+      Assert.Equal(2, stack.Size);
+
+    }
+
+    [Fact]
+    public void Popping_whole_stack_down_to_nothing()
+    {
+
+      //Arrange
+      Stack<int> stack = new Stack<int>();
+      stack.Push(1);
+      stack.Push(3);
+      stack.Push(5);
+
+      //Act
+      stack.Pop();
+      stack.Pop();
+      //stack.Pop();
+      bool result = stack.IsEmpty();
+
+      //Assert
+      Assert.True(result);
+
+
+    }
 
 
     [Fact (Skip = "zipped")]

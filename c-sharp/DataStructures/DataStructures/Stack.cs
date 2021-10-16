@@ -15,7 +15,7 @@ namespace DataStructures
   {
     private Node top;
     private int size;
-    Stack<int> stack = new Stack<int>();
+    //Stack<int> stack = new Stack<int>();
 
     //public virtual Object Peek();
     //{
