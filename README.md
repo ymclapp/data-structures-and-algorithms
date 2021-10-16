@@ -29,3 +29,4 @@ To run your tests
 ## Code Challenge: [Class 06 - Linked List Append, Insert Belore, Insert After](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 07 - Linked List Finding the Kth value](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 08 - Linked List Zip](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
+## Code Challenge: [Class 10 - Stack and Queue](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
