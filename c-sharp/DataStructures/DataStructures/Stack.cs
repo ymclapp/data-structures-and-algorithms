@@ -8,13 +8,22 @@ namespace DataStructures
 {
   class LinkedListNode
   {
-    internal int value;
-    internal Node underTop;
+    //internal int value;
+    //internal Node underTop;
   }
   public class Stack<T>
   {
     private Node top;
     private int size;
+    Stack<int> stack = new Stack<int>();
+
+    //public virtual Object Peek()
+    //{
+     // if (Size == 0)
+     //   throw new InvalidOperationException("The stack is empty");
+     // return stack.top;
+    //}
+
 
     public int Size { get { return size; } }
 
@@ -32,7 +41,9 @@ namespace DataStructures
       top = top.underTop;
       size--;
       return value;
+      //Peek();
     }
+
 
     public void Push(int v)
     {

@@ -206,6 +206,7 @@ namespace DataStructuresTests
       stack.Push(1);
       stack.Push(3);
       stack.Push(5);
+      //stack.Peek();
 
 
       //Assert

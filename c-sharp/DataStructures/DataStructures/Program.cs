@@ -5,7 +5,11 @@ namespace DataStructures
   {
     public static void Main(string[] args) 
     {
+      //Stack<int> stack = new Stack<int>();
       Console.WriteLine("hi");
+      //Console.WriteLine("The element at the top is now:  " + stack.Peek());
+      Console.WriteLine("The element at the top is now:  ");
+
     }
   }
 }
