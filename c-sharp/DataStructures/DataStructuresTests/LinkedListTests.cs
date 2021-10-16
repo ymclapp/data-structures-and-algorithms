@@ -251,6 +251,34 @@ namespace DataStructuresTests
       //Assert
       Assert.True(result);
 
+    }
+
+    [Fact]
+    public void Creating_an_empty_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+
+      //Act
+      bool result = queue.IsEmpty();
+
+
+      //Assert
+      Assert.True(result);
+
+    }
+
+    [Fact]
+    public void Enqueing_into_a_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+
+      //Act
+      queue.Enqueue
+
+      //Assert
+
 
     }
 
