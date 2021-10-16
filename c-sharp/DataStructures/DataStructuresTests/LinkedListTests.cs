@@ -245,7 +245,7 @@ namespace DataStructuresTests
       //Act
       stack.Pop();
       stack.Pop();
-      //stack.Pop();
+      stack.Pop();
       bool result = stack.IsEmpty();
 
       //Assert
