@@ -147,6 +147,8 @@ namespace DataStructures
 
 
 
+
+
     //public static LinkedList Zipped(LinkedList list1, LinkedList list2)
     //{
     // Node currentNode1 = Head;
