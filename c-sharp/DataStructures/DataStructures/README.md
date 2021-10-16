@@ -88,3 +88,24 @@ Space: O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+## Code Challenge:  Class 10 - Stack and Queue
+
+We will be creating a stack and a queue.
+
+## Challenge
+We need to create a stack and pop, push, isempty, peek, and test all.   Same with queue for enqueue, dequeue, peek, and empty and test all.
+
+## Approach & Efficiency
+
+Dealing with a stack:
+Time:  O(n)
+Space: O(n)
+
+Dealing with a queue:
+Time:  O(n)
+Space: O(n)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
