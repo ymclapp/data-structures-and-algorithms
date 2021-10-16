@@ -17,7 +17,7 @@ namespace DataStructures
     private int size;
     Stack<int> stack = new Stack<int>();
 
-    //public virtual Object Peek()
+    //public virtual Object Peek();
     //{
      // if (Size == 0)
      //   throw new InvalidOperationException("The stack is empty");
