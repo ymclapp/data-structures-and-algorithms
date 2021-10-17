@@ -315,13 +315,35 @@ namespace DataStructuresTests
       queue.Enqueue(600);
       queue.Enqueue(800);
       queue.Dequeue();
-      queue.Dequeue();
+      //queue.Dequeue();
 
       //Act
       int result = queue.size;
 
       //Assert
       Assert.Equal(3, result);
+
+    }
+
+    [Fact]
+
+    public void Dequeing_multiple_items_from_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(200);
+      queue.Enqueue(400);
+      queue.Enqueue(600);
+      queue.Enqueue(800);
+      queue.Dequeue();
+      queue.Dequeue();
+      //queue.Dequeue();
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(2, result);
 
     }
 
