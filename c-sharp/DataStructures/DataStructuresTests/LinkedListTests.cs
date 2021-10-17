@@ -251,9 +251,126 @@ namespace DataStructuresTests
       //Assert
       Assert.True(result);
 
+    }
+
+    [Fact]
+    public void Creating_an_empty_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+
+      //Act
+      bool result = queue.IsEmpty();
+
+
+      //Assert
+      Assert.True(result);
 
     }
 
+    [Fact]
+    public void Enqueing_into_a_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(1);
+      //queue.Enqueue(2);
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(1, result);
+
+    }
+
+    [Fact]
+    public void Equeueing_multiple_into_a_queue()
+    {
+
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(100);
+      queue.Enqueue(200);
+      queue.Enqueue(300);
+      queue.Enqueue(400);
+
+      //Act
+      int result = queue.size;
+
+
+      //Assert
+      Assert.Equal(4, result);
+
+    }
+
+    [Fact]
+    public void Dequeing_one_item_from_queue()
+    {
+
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(200);
+      queue.Enqueue(400);
+      queue.Enqueue(600);
+      queue.Enqueue(800);
+      queue.Dequeue();
+      //queue.Dequeue();
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(3, result);
+
+    }
+
+    [Fact]
+
+    public void Dequeing_multiple_items_from_queue()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(200);
+      queue.Enqueue(400);
+      queue.Enqueue(600);
+      queue.Enqueue(800);
+      queue.Dequeue();
+      queue.Dequeue();
+      //queue.Dequeue();
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(2, result);
+
+    }
+
+    [Fact]
+
+    public void Emptying_queue_with_dequeing()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(200);
+      queue.Enqueue(400);
+      queue.Enqueue(600);
+      queue.Enqueue(800);
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+      //queue.Peek().ToString();
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(0, result);
+
+    }
 
     [Fact (Skip = "zipped")]
     public void Zipping_two_linkedlists_together()
