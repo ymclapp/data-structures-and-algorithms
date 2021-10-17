@@ -347,6 +347,29 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+
+    public void Emptying_queue_with_dequeing()
+    {
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(200);
+      queue.Enqueue(400);
+      queue.Enqueue(600);
+      queue.Enqueue(800);
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+      queue.Dequeue();
+
+      //Act
+      int result = queue.size;
+
+      //Assert
+      Assert.Equal(0, result);
+
+    }
 
     [Fact (Skip = "zipped")]
     public void Zipping_two_linkedlists_together()
