@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-  class LinkedListNode
-  {
+  //public class LinkedListNode
+  //{
     //internal int value;
     //internal Node underTop;
-  }
+  //}
   public class Stack<T>
   {
     private Node top;

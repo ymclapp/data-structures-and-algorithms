@@ -273,12 +273,14 @@ namespace DataStructuresTests
     {
       //Arrange
       Queue<int> queue = new Queue<int>();
+      queue.Enqueue(1);
+      //queue.Enqueue(2);
 
       //Act
-      queue.Enqueue
+      int result = queue.size;
 
       //Assert
-
+      Assert.Equal(1, result);
 
     }
 
