@@ -15,13 +15,15 @@ namespace DataStructures
   {
     private Node top;
     private int size;
+    //private object stack;
+
     //Stack<int> stack = new Stack<int>();
 
     //public virtual Object Peek();
     //{
-     // if (Size == 0)
-     //   throw new InvalidOperationException("The stack is empty");
-     // return stack.top;
+    // if (Size == 0)
+    //   throw new InvalidOperationException("The stack is empty");
+    // return stack.top;
     //}
 
 
@@ -41,7 +43,7 @@ namespace DataStructures
       top = top.underTop;
       size--;
       return value;
-      //Peek();
+      //stack.Peek().top.Pop();
     }
 
 

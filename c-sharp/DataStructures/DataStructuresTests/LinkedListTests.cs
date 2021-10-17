@@ -362,6 +362,7 @@ namespace DataStructuresTests
       queue.Dequeue();
       queue.Dequeue();
       queue.Dequeue();
+      //queue.Peek().ToString();
 
       //Act
       int result = queue.size;
