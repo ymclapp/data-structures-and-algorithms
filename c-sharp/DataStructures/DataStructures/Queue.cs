@@ -30,15 +30,32 @@ namespace DataStructures
       return false;
     }//end of IsEmpty()
 
-    public void Enqueue(int n)
+    public void Enqueue(int value)
     {
       Node currentNode = Head;
       Head = new Node
       {
-        Value = n,
+        Value = value,
         Next = currentNode
       };
       size++;
     }//end of Enqueue
+
+    public int? Dequeue()
+    {
+      if (size == 0)
+        return null;
+
+      Node currentNode = Head;
+      Node previousNode = currentNode;
+      while(currentNode.Next != null)
+      {
+        previousNode = currentNode;
+        currentNode = currentNode.Next;
+      }
+      previousNode.Next = null;
+      size--;
+      return currentNode.Value;
+    }//end of dequeue()
   }
 }
