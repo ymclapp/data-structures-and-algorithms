@@ -284,6 +284,26 @@ namespace DataStructuresTests
 
     }
 
+    [Fact]
+    public void Equeueing_multiple_into_a_queue()
+    {
+
+      //Arrange
+      Queue<int> queue = new Queue<int>();
+      queue.Enqueue(100);
+      queue.Enqueue(200);
+      queue.Enqueue(300);
+      queue.Enqueue(400);
+
+      //Act
+      int result = queue.size;
+
+
+      //Assert
+      Assert.Equal(4, result);
+
+    }
+
 
     [Fact (Skip = "zipped")]
     public void Zipping_two_linkedlists_together()
