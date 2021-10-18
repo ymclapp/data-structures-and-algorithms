@@ -98,7 +98,7 @@ namespace DataStructures
 
     public void AddAfter(int searchValue, int addValue)
     {
-      Node newNode = new Node();//addValue?
+      Node newNode = new Node(addValue);//addValue?
       Node currentNode = Head;
 
       while(currentNode != null)

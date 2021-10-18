@@ -145,7 +145,7 @@ namespace DataStructuresTests
 
 
    
-    [Fact(Skip = "need to fix for lab 06")]
+    [Fact]
     public void Add_after_340_of_linkedList()
     {
 
@@ -154,13 +154,15 @@ namespace DataStructuresTests
       list.Insert(210);
       list.Insert(340);
       list.Insert(550);
+      list.Insert(0);
 
       //Act
       list.AddAfter(340, 3);
+      string resultString = list.ToString();
 
 
       //Assert
-      Assert.Equal("550 -> 340 -> 3 -> 210 -> NULL", list.ToString());
+      Assert.Equal("0 -> 550 -> 340 -> 3 -> 210 -> NULL", resultString);
 
     }
 
