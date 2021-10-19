@@ -8,4 +8,8 @@
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="stack-queue-pseudo\" />
+  </ItemGroup>
 </Project>
