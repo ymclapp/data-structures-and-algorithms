@@ -27,6 +27,48 @@ namespace CodeChallengesTests
       Assert.True(result1);
       Assert.True(result2);
 
+    }
+
+    [Fact]
+    public void Enqueuing_into_each_of_the_queues()
+    {
+
+      //Arrange
+      var qDog = new Queue<string>();
+      var qCat = new Queue<string>();
+
+      //Act
+      qDog.Enqueue("Dog-Blackie-1");
+      qCat.Enqueue("Cat-Tuxedo-1");
+      //qDog.Enqueue("Dog-Tex-2");
+
+      //Assert
+      Assert.Single(qDog);
+      //Assert.Equal(2, qDog.Count);
+      Assert.Single(qCat);
+    }
+
+    [Fact]
+    public void Peeking_into_each_queue()
+    {
+
+      //Arrange
+      var qDog = new Queue<string>();
+      var qCat = new Queue<string>();
+
+      //Act
+      qDog.Enqueue("Dog-Blackie-1");
+      qCat.Enqueue("Cat-Tuxedo-1");
+      qDog.Enqueue("Dog-Tex-2");
+      qDog.Enqueue("Dog-Mister-3");
+      qCat.Enqueue("Cat-Smokey-2");
+      string result1 = (string)qDog.Peek();
+      string result2 = (string)qCat.Peek();
+
+      //Arrange
+      Assert.Equal("Cat-Tuxedo-1", result2);
+      Assert.Equal("Dog-Blackie-1", result1);
+
 
     }
 
