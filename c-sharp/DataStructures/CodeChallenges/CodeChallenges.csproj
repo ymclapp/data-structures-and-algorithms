@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Stack-Queue-Animal-Shelter\" />
     <Folder Include="stack-queue-pseudo\" />
   </ItemGroup>
 </Project>
