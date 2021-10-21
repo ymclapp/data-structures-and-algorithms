@@ -33,3 +33,21 @@ Space: O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+## Code Challenge:  Class 13 - Stack Queue Brackets
+
+We need to create a queue to use to verify that a set of values received for brackets have open and closing in the correct order.
+
+## Challenge
+We need to create a queue that will allow us to compare the sets of brackets as each individual bracket is revealed.
+
+## Approach & Efficiency
+![Stack Queue Brackets Whiteboard](./stack-queue-brackets/stack-queue-brackets.jpg)
+
+Dealing with a stack:
+Time:  O(n)
+Space: O(n)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
