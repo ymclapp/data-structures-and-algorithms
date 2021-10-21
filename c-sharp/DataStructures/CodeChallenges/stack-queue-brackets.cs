@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CodeChallenges
 {
-  class stack_queue_brackets
+  public class stack_queue_brackets
   {
   }
 }
