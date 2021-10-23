@@ -51,3 +51,28 @@ Space: O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+
+## Code Challenge:  Class 15 - Trees
+We need to create a Binary Tree and a Binary Search Tree.
+
+## Challenge
+We need to create our trees and include methods for each depth first traversal - pre-order, in-order, and post-order as well as the required tests.
+
+## Approach & Efficiency
+
+Pre-Order:
+	- Time: O(h)
+	- Space: O(1)
+
+In-Order:
+	- Time: O(h)
+	- Space: O(1)
+
+Post-Order:
+	- Time: O(h)
+	- Space: O(1)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
