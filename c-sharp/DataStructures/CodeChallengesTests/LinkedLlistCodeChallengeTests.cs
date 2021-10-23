@@ -10,7 +10,7 @@ namespace CodeChallengesTests
     public void Test1()
     {
       LinkedLists.LinkedLlistChallengeO1();
-      Assert.Equal(true, true);
+      Assert.True(true);
     }
   }
 }
