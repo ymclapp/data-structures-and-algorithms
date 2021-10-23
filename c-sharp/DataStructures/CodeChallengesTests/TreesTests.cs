@@ -7,7 +7,21 @@ using Xunit;
 
 namespace CodeChallengesTests
 {
-  class TreesTests
+  public class TreesTests
   {
+    [Fact]
+    public void Empty_tree ( )
+    {
+
+      //Arrange
+
+
+      //Act
+
+
+      //Assert
+
+
+    }
   }
 }
