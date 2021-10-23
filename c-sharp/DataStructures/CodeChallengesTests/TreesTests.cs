@@ -26,11 +26,44 @@ namespace CodeChallengesTests
       Assert.Null(root);
 
     }
+
+    [Fact]
+    public void Adding_A_Root_To_A_Tree()
+    {
+      //Arrange
+      BinaryTree<int> btree = new BinaryTree<int>();
+
+
+
+      //Act
+      btree.Root = new Node<int>(1);
+
+
+      //Assert
+      Assert.NotNull(btree.Root);
+
+    }
+
+
   }
 
-  internal class BinaryTree<T>
+  
+
+  public class BinaryTree<T>
   {
-    internal Node Root { get; set; }
-    internal Node Node {get; set; }
+    public Node<int> Root { get; internal set; }
+    public class Node<T> : Node
+    {
+      public Node Root { get; set; }
+      //public Node Node { get; set; }
+      public Node Left { get; set; }
+      //public Node Value { get; set; }
+
+      public Node ( int value )
+      {
+      this.Value = value;
+      }
+    }
+
   }
 }

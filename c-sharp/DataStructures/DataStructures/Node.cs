@@ -10,7 +10,6 @@ namespace DataStructures
     public Node Next { get; set; }
     public Node Head { get; set; }
     public Node underTop { get; set; }
-    public Node Left { get; set; }
-    public Node Root { get; set; }
+
   }
 }
