@@ -25,8 +25,8 @@ namespace CodeChallenges
 
     public class Queue
     {
-      Node front = null;
-      Node rear = null;
+      //Node front = null;
+      //Node rear = null;
       public int count = 0;
     }
 
