@@ -153,7 +153,7 @@ namespace DataStructuresTests
       return result;
     }
 
-    private IEnumerable<int> PreOrder ( Node<int> root )
+    public IEnumerable<int> PreOrder ( Node<int> root )
     {
       if (root is null) yield break;
 
