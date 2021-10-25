@@ -23,7 +23,7 @@ namespace DataStructures.Trees
         return results;
       }
 
-      private IEnumerable<T> PreOrder ( Node<T> root )
+      public IEnumerable<T> PreOrder ( Node<T> root )
       {
         if (root is null) yield break;
         //yield return root.Value;

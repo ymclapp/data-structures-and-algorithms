@@ -137,7 +137,7 @@ namespace DataStructuresTests
       btree.Root.Right.Right = new Node<int>(66);
 
       //Act
-      IEnumerable<int> results = PreOrder(btree.Root); //<<--it doesn't like this
+      var results = PreOrder(btree.Root); //<<--it doesn't like this
 
       //Assert
       Assert.Equal(new[] { 100, 25, 75, 56, 12, 23, 66 }, results);
@@ -153,10 +153,11 @@ namespace DataStructuresTests
       return result;
     }
 
-    private IEnumerable<int> PreOrder ( Node<int> root )
+    public IEnumerable<int> PreOrder ( Node<int> root )
     {
       if (root is null) yield break;
-     // yield return root.Value;
+
+      yield return root.Value;
 
       foreach (int item in PreOrder(root.Left))
       {
