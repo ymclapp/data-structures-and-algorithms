@@ -109,3 +109,21 @@ Space: O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+
+## Code Challenge:  Class 16 - Tree Max
+![Class 16 - Tree Max](./DataStructures/Trees/tree-max.jpg)
+
+Using a binary tree, we should find the max value located in the tree.
+
+## Challenge
+We need to create a method to traverse the tree nodes and determine which node value is the highest.
+
+## Approach & Efficiency
+
+Time:  O(n)
+Space: O(n)
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
