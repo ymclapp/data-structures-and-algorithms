@@ -76,3 +76,18 @@ Post-Order:
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+## Code Challenge:  Class 17 - Trees - Breadth First
+![Tree Breadth First Whiteboard](./stack-queue-brackets/tree-breadth-first.jpeg)
+We have a tree and need to provide the values back in order.
+
+## Challenge
+We need to traverse our tree and track each of the values that we come to in the order that we encounter them.  We will work starting at the root and then go to the first left and straight over to the first right.  Once that is done, we go back to the left directly below the first left, record that value and then to the nodes directly to the right of that node on the same level.  We repeat until we reach the bottom of the tree where there are no more values.
+
+## Approach & Efficiency
+
+- Time: O(n)
+- Space: O(n)
+
+
+## API
