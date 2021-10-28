@@ -91,3 +91,18 @@ We need to traverse our tree and track each of the values that we come to in the
 
 
 ## API
+
+## Code Challenge:  Class 18 - Trees - FizzBuzz
+![Tree Fizz Buzz Whiteboard](./tree-fizz-buzz/FizzBuzz-Whiteboard.jpg)
+We have a tree and need to evaluate it to FizzBuzz.
+
+## Challenge
+We are given a tree that we need to run against the fizzbuzz formula.  We will start at the root and determine if it has a left and a right.  If it does, we will copy the root int value into a new tree as the root string.  We will go to the left of the root and traverse that whole let copying the values into the new tree at the node that they were in the original tree.  As we copy them, if they are divisible by 3 or 5 or 15, then we will change the string from the number to either Fizz (divisible by 3), Buzz (divisible by 5), or FizzBuzz (divisible by 15).  If they are not divisible by one of those, then the string of the original value will be copied into the new tree.  Once we have done this to the left leg of the tree, we will travel to the right of root and do the same process for the right leg of the tree.
+
+## Approach & Efficiency
+
+- Time: O(n)
+- Space: O(n)
+
+
+## API
