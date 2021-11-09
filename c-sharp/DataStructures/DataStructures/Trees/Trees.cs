@@ -11,28 +11,44 @@ namespace DataStructures.Trees
   {
     public class BinaryTree<T>
     {
-      BinaryTree<T> btree = new BinaryTree<T>();
-      public Node<T> Root { get; set; }
-
-      public IEnumerable<T> PreOrder ( Node<T> root, List<T> results )
+      //BinaryTree<T> btree = new BinaryTree<T>();
+      public class Node
       {
-
-        return PreOrder(root);
-        List<T> result = new List<T>();
-        PreOrder(root, results);
-        return results;
+        public Node<T> Root { get; set; }
+        public Node Left { get; set; }
+        public Node Right { get; set; }
+        public T Value { get; set; }
       }
+
+      public Node Root;
+      public BinaryTree()
+      {
+        Root = null;
+      }
+
+      public Node ReturnRoot()
+      {
+        return Root;
+      }
+
+//      public IEnumerable<T> PreOrder ( Node<T> root, //List<T> results )
+//      {
+ //       return PreOrder(root);
+ //       List<T> result = new List<T>();
+ //       PreOrder(root, results);
+//        return results;
+ //     }
 
       public IEnumerable<T> PreOrder ( Node<T> root )
       {
         if (root is null) yield break;
-        //yield return root.Value;
+        yield return root.Value;
 
-        foreach(T item in PreOrder(Root.Left))
+        foreach(T item in PreOrder(root.Left))
         {
           yield return item;
         }
-        foreach(T item in PreOrder(Root.Right))
+        foreach(T item in PreOrder(root.Right))
         {
            yield return item;
         }

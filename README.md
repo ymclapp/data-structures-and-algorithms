@@ -37,3 +37,4 @@ To run your tests
 ## Code Challenge: [Class 16 - Tree Max](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 17 - Tree Breadth First](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 18 - Tree Fizz Buzz](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\README.md)
+## Code Challenge: [Class 26 - Insertion Sort](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\Sorting\README.md)
