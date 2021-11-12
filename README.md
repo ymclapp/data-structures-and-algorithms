@@ -39,5 +39,7 @@ To run your tests
 ## Code Challenge: [Class 18 - Tree Fizz Buzz](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\README.md)
 ## Code Challenge: [Class 26 - Insertion Sort](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\Sorting\README.md)
 ## Code Challenge: [Class 27 - Merge Sort](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\Sorting\README.md)
+## Code Challenge: [Class 28 - Quick Sort](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\Sorting\README.md)
 ## Code Challenge: [Class 30 - Hash Table](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
+
 
