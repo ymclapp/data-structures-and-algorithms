@@ -127,3 +127,21 @@ Space: O(n)
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+
+
+## Code Challenge:  Class 30 - Hash Table Testing
+
+Using the systems hash table features, test by adding, etc.
+
+## Challenge
+Create tests only to test the system
+
+## Approach & Efficiency
+
+Time:  O(n)
+Space: O(1) - for searches
+Space: O(n) - for adding
+
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
