@@ -50,6 +50,48 @@ namespace DataStructuresTests
 
       //Assert
       dict.TryGetValue(1, out string value);
+      Assert.Equal("one", value);
+    }
+
+    [Fact]
+    public void Does_not_find_in_hashtable ( )
+    {
+      //Arrange
+      Dictionary<int, string> dict = new Dictionary<int, string>();
+
+      //Act
+      dict.Add(1, "one");
+
+
+      //Assert
+      Assert.False (dict.TryGetValue(2, out string value));
+
+    }
+
+    [Fact]
+    public void Cannot_add_two_items_with_same_key()
+    {
+
+      //Arrange
+      Dictionary<int, string> dict = new Dictionary<int, string>();
+
+      //Act
+      dict.Add(1, "one");
+      //dict.Add(1, "o-n-e");
+      dict.Add(10, "one zero");
+      dict.Add(20, "two zero");
+      dict.Add(100, "one zero zero");
+
+
+      //Assert
+      Assert.True(dict.TryGetValue(1, out string value1));
+      Assert.Equal("one", value1);
+      Assert.True(dict.TryGetValue(1, out string value2));
+      Assert.NotEqual("o-n-e", value2);
+
+
+
+
     }
   }
 }
