@@ -106,3 +106,18 @@ We are given a tree that we need to run against the fizzbuzz formula.  We will s
 
 
 ## API
+
+## Code Challenge:  Class 31 - Hashmap Repeated Word
+![Hashmap Repeated Word Whiteboard](./HashmapRepeatWord/HashmapRepeatWord.jpg)
+Find the first repeated word.
+
+## Challenge
+We are given a book and we need to write a function that will iterate through each word in the book and add them to a dictionary until it reaches a word that has already been added to the dictionary.  At that point it stops and returns the duplicated word.
+
+## Approach & Efficiency
+
+- Time: O(n)
+- Space: O(n)
+
+
+## API
