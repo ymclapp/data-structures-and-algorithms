@@ -121,3 +121,26 @@ We are given a book and we need to write a function that will iterate through ea
 
 
 ## API
+
+## Code Challenge:  Class 32 - Hashset Tree Intersection
+![Hash Tree Intersection Whiteboard](./HashTreeIntersection/HashTreeIntersection.jpg)
+
+Find the values that are in BOTH trees
+<br><br>
+Example Trees:
+
+![Tree 1](./HashTreeIntersection/HTITree1.png)
+<br><br>
+
+![Tree 2](./HashTreeIntersection/HTITree2.png)
+
+## Challenge
+We are given two trees to create a hashset out of the first and then compare the second to.  As we interate through the second tree, we are  comparing the values to the hashset.  If the value is not found in the current hashset, then the second tree's value is added to the hashset.  If the value IS found in the current hashset, then the second tree's value is added to the list of matching values.
+
+## Approach & Efficiency
+
+- Time: O(n)
+- Space: O(n)
+
+
+## API
