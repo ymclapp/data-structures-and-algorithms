@@ -144,3 +144,20 @@ We are given two trees to create a hashset out of the first and then compare the
 
 
 ## API
+
+## Code Challenge:  Class 33 - Hashmap Left Join
+![Hashmap Left Join Whiteboard](./HashmapLeftJoin/HashmapLeftJoinWhiteboard.jpg)
+
+Join the two hashmaps
+![Hashmap Left Join Example](./HashmapLeftJoin/HashmapLeftJoin.png)
+
+## Challenge
+We are given two hashmaps with key value pairs.  We are to move the whole first hashmap into a datastructure output.  Then, we iterate through the second hashmap and compare the key of hashmap 2 to the key of hashmap 1.  If they are the same, then we add the value from hashmap 2 to the datastructure that the first hashmap's keys and values were created with.
+
+## Approach & Efficiency
+
+- Time: O(n + m)
+- Space: O(n)
+
+
+## API
