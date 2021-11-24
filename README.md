@@ -43,3 +43,4 @@ To run your tests
 ## Code Challenge: [Class 31 - Hashmap Repeated Word](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\README.md)
 ## Code Challenge: [Class 32 - Hashset Tree Intersection](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\README.md)
 ## Code Challenge: [Class 33 - Hashmap Left Join](..\data-structures-and-algorithms\c-sharp\DataStructures\CodeChallenges\README.md)
+## Code Challenge: [Class 35 - Graph](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
