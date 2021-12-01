@@ -161,7 +161,7 @@ Space: O(n)
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
-## Code Challenge:  Class 36 - Graph
+## Code Challenge:  Class 36 - Graph Breadth First
 
 
 ## Challenge
@@ -173,6 +173,24 @@ Implement a breadth-first traversal on a graph.
 
 Time:  O(n)
 Space: O(n)
+
+
+## API
+
+
+## Code Challenge:  Class 37 - Graph Business Trip
+
+
+## Challenge
+Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
+
+![Graph Example](./DataStructures/Graphs/GraphBusTrip.png)
+![Graph Business Trip Whiteboard](./DataStructures/Graphs/GrapBusTriphWhiteboard.jpg)
+
+## Approach & Efficiency
+
+Time:  O(V^E)
+Space: O(V^V)
 
 
 ## API
