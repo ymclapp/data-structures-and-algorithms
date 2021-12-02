@@ -185,12 +185,29 @@ Space: O(n)
 Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
 
 ![Graph Example](./DataStructures/Graphs/GraphBusTrip.png)
-![Graph Business Trip Whiteboard](./DataStructures/Graphs/GrapBusTriphWhiteboard.jpg)
+![Graph Business Trip Whiteboard](./DataStructures/Graphs/GraphBusTripWhiteboard.jpg)
 
 ## Approach & Efficiency
 
 Time:  O(V^E)
 Space: O(V^V)
+
+
+## API
+
+## Code Challenge:  Class 38 - Graph Depth First
+
+
+## Challenge
+Conduct a depth first preorder traversal on a graph
+
+![Graph Example](./DataStructures/Graphs/GraphDepthFirst.png)
+![Graph Depth First Whiteboard](./DataStructures/Graphs/GraphDepthFirstWhiteboard.jpg)
+
+## Approach & Efficiency
+
+Time:  O(n)
+Space: O(n)
 
 
 ## API

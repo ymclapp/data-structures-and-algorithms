@@ -46,3 +46,4 @@ To run your tests
 ## Code Challenge: [Class 35 - Graph](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 36 - Graph Breadth First](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
 ## Code Challenge: [Class 37 - Graph Business Trip](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
+## Code Challenge: [Class 38 - Graph Business Trip](..\data-structures-and-algorithms\c-sharp\DataStructures\DataStructurest\README.md)
